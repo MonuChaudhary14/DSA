@@ -15,9 +15,6 @@ public:
         else{
             return x*power(x, n-1);   // return x*power(x*x, n/2);
         }
-
-
-
     }
 
     double myPow(double x, int n) {
