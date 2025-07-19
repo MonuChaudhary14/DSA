@@ -36,11 +36,11 @@ int optimise(int arr[], int n , int k){
 
         sum = sum + arr[i];
 
-        mp[sum]++;
-
+        
         if(mp.find(sum-k) != mp.end()){
             count = count + mp[sum-k];
         }
+        mp[sum]++;  // This will be given at last
     }
     return count;
 }
